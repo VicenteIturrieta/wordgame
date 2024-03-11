@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jueguito Scrmblr</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/words.js" defer></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+        <br>
+        <center><h2>Jueguito Scrmblr</h2></center>
+        <br>
+        <center><div class="startArea" onclick="start()"><button class="startBtn"> Comenzar </button></div></center>
+
+        <div class="content">
+            <p class="word"></p>
+            <div class="details">
+                <!--<p class="hint">Pista: <span></span></p>-->
+                <p class="time">Tiempo restante: <span><b>15</b>s</span></p>
+            </div>
+            <input type="text" spellcheck="false" placeholder="Enter a valid word">
+            <div class="buttons">
+                <button class="refresh-word">Refresh Word</button>
+                <button class="check-word">Check Word</button>
+            </div>
+            <div class="score-area"><span>Score: </span><span class="score">0</span></div>
+        </div>
+    </div>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modalText"></p>
+    </div></div>
+
+    
+  </body>
+</html>
